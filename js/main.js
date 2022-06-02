@@ -6,8 +6,6 @@ const serviceSVG = document.querySelector(".serviceSVG")
 const langLink = document.querySelector(".langLink")
 const langSVG = document.querySelector(".langSVG")
 
-const dropDownLang = document.querySelector(".dropDownLang")
-
 const mobileHeaderContainer = document.querySelector(".mobileHeaderContainer")
 const body = document.querySelector(".body")
 const hamburger = document.querySelector("#hamburger")
@@ -44,12 +42,10 @@ serviceLink.addEventListener("mouseout", () => {
 
 langLink.addEventListener("mouseover", () => {
     langSVG.classList.add("rotate")
-    dropDownLang.classList.remove("hidden")
 })
 
 langLink.addEventListener("mouseout", () => {
     langSVG.classList.remove("rotate")
-    dropDownLang.classList.add("hidden")
 })
 
 window.addEventListener("scroll", scrollHeader)
@@ -88,12 +84,10 @@ projectLinkScroll.addEventListener("mouseout", () => {
 
 langLinkScroll.addEventListener("mouseover", () => {
     langSVGScroll.classList.add("rotate")
-    dropDownLang.classList.remove("hidden")
 })
 
 langLinkScroll.addEventListener("mouseout", () => {
     langSVGScroll.classList.remove("rotate")
-    dropDownLang.classList.add("hidden")
 })
 
 // FOOOTER 

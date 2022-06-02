@@ -319,10 +319,6 @@ button {
     border-bottom: 2px solid var(--red);
 }
 
-.navLink a {
-    padding-bottom: 2.5px;
-}
-
 .navLink a:hover {
     color: var(--red);
     transition: all 300ms;
@@ -332,15 +328,51 @@ button {
     padding: 20px 0;
 }
 
+.languageChanger:hover .dropDownLang {
+    opacity: 1;
+    transition: all 400ms;
+    display: block;
+}
+
+.serviceLinkDiv:hover .dropDownService {
+    opacity: 1;
+    transition: all 400ms;
+}
+
+.projectLinkDiv:hover .dropDownProjects {
+    opacity: 1;
+    transition: all 400ms;
+}
+
 .langLink {
     position: relative;
 }
 
-.dropDownLang {
+.dropDownService {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: -20px;
     padding: 0 10px 10px 10px;
+    opacity: 0;
+    z-index: 3;
+}
+
+.dropDownProjects {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    padding: 0 10px 10px 10px;
+    opacity: 0;
+    z-index: 3;
+}
+
+.dropDownLang {
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    padding: 0 10px 10px 10px;
+    opacity: 0;
+    z-index: 3;
 }
 
 .dropDownContent {
@@ -351,18 +383,22 @@ button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
     padding: 5px 10px;
+    border-radius: 2px;
+    z-index: 3;
 }
 
 .dropDownContent p {
     padding: 10px 0;
+    transition: all 300ms;
 }
 
 .dropDownContent p:hover {
     color: var(--red);
     transition: all 300ms;
+    cursor: pointer;
 }
 
-.dropDownContent::before {
+/* .dropDownContent::before {
     content: "";
     position: absolute;
     top: 0;
@@ -371,7 +407,7 @@ button {
     height: 10px;
     background: #000;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
+} */
 
 /* ===== FORM ===== */
 
